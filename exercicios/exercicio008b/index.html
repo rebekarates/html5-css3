@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte/ Pré-Formatação</h2>
+    <p>O comando <code>document.getEelementById</code>('teste') é escrito em JavaScript</p>
+    <pre>
+        <code>
+num = int(input('digite um numero'))
+if num %2 == 0:
+    print(f'o numero {num} é par')
+else:
+    print(f'O numero {num} é impar')
+print('Fim do Programa')
+<!--Usei a tecla shift+tab para remover a tabulação de todas as linhas ao mesmo tempo-->
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q>
+    <!--usei a Tag q para da sentido de citação sempre usar em citações simples por não fazer a quebra da linha--> 
+    </p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble em seu livro html para leigos:</p>
+    <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&newbks=0&hl=pt-BR&source=newbks_fb&redir_esc=y">
+        A diferença entre em line e um bloco de texto é importante os elementos html nesse capitulo
+    
+    <!--Tag usada para dar ideia visual de citação tendo o parametro cite para colar o link do site de onde a sitação foi tirada porém o parametro não será mostrado visualmente-->
+    </blockquote>
+    <h2>Abreviações</h2>
+<p>Estou estudando<abbr title="Hyper text markup language"> HTML </abbr>e <abbr title="Cascanding Styles Sheets">CSS</abbr> e estou adorando</p>
+<!--usei a tag grtgfr    abbr para mostrar o significado da abreviação quando o usuário parar o cursor em cima da mesma. title deve conter esse significado -->
+    <h2>texto invertido</h2>
+    <p><bdo dir="rtl">Estou Aprendendo HTML</bdo></p>
+    <p><bdo dir="ltr">Estou aprendendo HTML</bdo></p>
+<!-- Tag usada para escrever palavras ou frases de trás para frente com apenas essas duas variações -->
+</body>
+</html>

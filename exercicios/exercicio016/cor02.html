@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiêntes em CSS</title>
+    <style>
+        *{ /*configurações globais das CSS que ajuda no funcionamento no caso do degradê de de cima para baixo, ou de baixo para cima*/
+            height: 100%;
+        }
+        
+        body{
+            background-image: linear-gradient(to bottom,#BF009E 20%,#E40033,#F84210,#F88916,#FDB61C);
+            background-attachment: fixed;
+        }
+    
+    </style>
+    <!--Aqui fiz um gradiente usando diversas cores, escolhi colocar a direção em baixo, mas podemos colocar tambem em graus (45deg, -45deg, 90deg, -90deg....) tudo junto e minusculo.-->
+    <!--o backgroun-attachment: fixed; vai fixar o gradiente na tela, para que ele não role junto com o mouse-->
+    <!--pode-se usar o tambem o (radial-gradient) que quando colocado CIRCLE no local da direção, faz um gradiente circular-->
+    <!--Apos cada cor com um espaço e antes da vírgula, pode-se colocar a porcentagem, que será, basicamente, quanto da tela determinada cor vai ocupar.-->
+</head>
+<body>
+    <h1>Testando Gradiêntes</h1>
+</body>
+</html>

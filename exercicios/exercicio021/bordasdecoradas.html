@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de borda</title>
+    <style>
+        h1{
+            border: 20px solid black;/*sem esse o border-image não funciona*/
+            padding: 10px;
+            border-image-source: url('sem título.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+            /*
+            AQUI INCLUI UMA IMAGEM CRIADA POR MIM COMO BORDA
+            SÃO NECESSÁRIOS OS TRÊS COMANDOS ACIMA.
+            
+            em BORDER-IMAGE-REPEAT
+            1-repeat->vai repetir a imagem até preencher a borda
+            2-stretch->vai esticar a imagem pra preencher a borda
+             O SHORTHAND para border-image
+             será aplicado na seguinte ordem:
+            1-url
+            2-slace
+            3-repeat ou stretch
+
+            obs:é necessária a presença do primeiro border e seus parâmetros
+             */
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de borda</h1>
+</body>
+</html>

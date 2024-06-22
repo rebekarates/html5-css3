@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-level</title>
+    <style>
+        h1{/*box-level, mas posso alterar o tipo para inline- level incluindo  a linha (DISPLAY: inline;)*/
+            background-color: coral;
+            height: 300px; /*altura da caixa*/
+            width: 300px;   /*largura da caixa*/
+            border-width: 10px; /*largura da borda da caixa*/
+            border-style: solid;/*tipo de linha que a borda visual terá*/
+            border-color: rgb(187, 66, 30);/*cor da linha da borda visual*/
+            /*O border vai criar uma borda visual, é possivel alterar a largura e tambemm o tipo, os mais usados são:
+            >solid- linha sólida
+            >dashed-linha pontilhada
+            >dotted-linha de bolinhas
+            >double-linha dupla
+            >groove-linha 3D
+            */
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            /*o Padding vai criar um espaço entre a borda e o conteúdo, pode ser configurado em todas as direções. em caso do uso de todas é indicado o uso de forma horaria a seguir:
+            >top-topo
+            >left-direita
+            >bottom-baixo
+            >right-esquerda
+            */
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 50px;
+            margin-right: 10px;
+            /*vai criar um espaço entre a borda e o resto do conteúdo externo, com a aplicação indicada assim como a do padding em forma horária*/
+            /*para centralizar qa caixa, usar o (MARGIN: AUTO;) que vai cenrtralizar a caixa independente do tamaho da tela*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+
+            
+            /*outline, vai criar um espaço(como uma margem em cima da margem) entre a margem e a borda, so que dentro da margem, é declarada da mesma forma da borda*/
+        }
+        a{/*inline-level podendo ser altera para o tipo box-level incluindo a linha(display:block)*/
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(37, 39, 151);
+            
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de box-level</h1>
+    <p>Paragrafros tambem são exemplos de box-level, mas os <a href="#">links são exemplos de caixa inline-level</a>. vamos ver como tudo isso funciona.</p>
+</body>
+</html>

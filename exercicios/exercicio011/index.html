@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 11 Mídias em HTML5</title>
+</head>
+<body>
+    <h1>IMAGEM DINÂMINA</h1>
+    <p>tente abrir esse site em vários dipositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <!--podem ser colocadas em ordem cre ou decrescente, com a regra de que um <source> deve vir, obrigatóriamente um acima do outro se não não vai funcionar-->
+        <!--Source tipo media-->
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <!--tamanho de imagem para celular (no exemplo)-->
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!--Tamanho de imagem para notbook e tablet (no exemplo)-->
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+        <!--o maior tamanho disponivel-->
+        <!--Aqui ultilizei a TAG <picture> que permite a inclusão de vairios <souce> para que as imagens contidas no meu site de adaptem em todos os tamanhos de tela (celular, pc, tv...)--> 
+        </picture>
+         <h1>AUDIO EM SITES</h1>
+            <p>Vamos aprender a reproduzir audios em HTML5</p>
+            <audio src="/midia/audioyoutube.mp3" controls autoplay></audio> <br>
+            <!--Essa é a forma mais simples de incluir um audio na sua pagina, usando a tag <audio>, deve se incluir os parâmetros: controls e o autoplay-->
+            <!--formatos de audio aceitos: MP3, WAV, OGG-->
+            <audio preload="metadata" autoplay controls loop>
+                <source src="midia/podcast.mp3" type="audio/mpeg">
+                <!--Aqui vamos usar a tag <source> novamente, que dará maior abrangência em formatos de audio é necessário um media tambem assim como para imagens-->
+                <!--Agora abaixo exemplos caso eu tivesse todos os formatos de audio aceitos-->
+                <source src="midia/podcast.ogg" type="audio/ogg">
+                <source src="midia/podcast.wav" type="audio/wav">
+                <!--Em caso de o audio nos 3 formatos aceitos, o navegador tentará carregar o audio por ordem da lista de cima para baixo até conseguir carregar, daí a importância da ordem-->
+                <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/podcast.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+                <!--a mensagem acima será mostrada caso, o navegador não tenha compatibilidade com nenhum dos formatos-->
+                <!--Evitar arquivos wave que são pesados e vai pesar meu site-->
+                <!--Source tipo src-->
+            </audio>
+    
+</body>
+</html>

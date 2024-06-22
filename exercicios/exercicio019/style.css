@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*
+aqui ultilizei um seletor personalizado, que pode ser identificado pela cerquilha(#) (em html é id, em css é # cerquilha), isso vai especificar que seletor x, mesmo que igual aos demais, vai ter configurações diferentes.
+pode ser usar de duas formas:
+1-apenas a cerquilha(#). ex: (#principal)
+assim mudará todos os seletores principais
+2-h1#principal que mudará o h1 principal, ou o seletor que você escolher colocar antes da cerquilha.
+*EM HTML É ID EM CSS É (#)
+*EM HTML É CLASS EM CSS É (.)
+*COLOCAR PRINCIPAL NO PARAMETRO ID É REGRA, TEM QUE ESTAR ESCRITO CORRETAMENTE
+*DENTRO DE UM DOCUMENTO HTML, SÓ PODE HAVER 1 ID.
+*/
+body{
+    background-image: linear-gradient(to left, pink, rgb(255, 213, 221));
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(228, 76, 101);
+}
+h1#principal{
+    text-align: center;
+    color: rgb(230, 91, 176);
+    background-color: aliceblue;
+}
+h2{
+    color: rgb(167, 73, 88);
+}
+.basico{
+    color: blueviolet;
+}
+.intermediario{
+    color: chartreuse;
+    font-weight: 100;
+}   
+.avancado{
+    color: crimson;
+}
+.destaque{
+    background-color: brown;
+}
+/*para resumir, a forma de seletor com ID é limitado, por não ser certo adicionar mais de um em um documento HTML, por mais que funcione. já a forma de seleção personalizada class, permite mudar todas as tags onde o mesmo termo que vc usou para o class esteja incluído, facilitando demais a vida!
+dá pra usar mais de uma classe em cada tag*/

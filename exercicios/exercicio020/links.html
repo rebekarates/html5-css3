@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando links</title>
+    <style>
+        /*SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children (filho)
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a{
+        color:  red;
+        text-decoration: none;
+        font-weight: bold;
+        /*aqui eu personalizei os links*/
+        }
+        a:visited{
+            color: darkred;
+            /*Aqui eu ultilizei a pseudoclasse, (visited) que personaliza como ficara o link já visitado*/
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+            /*Aqui ultilizei a pseudoclasse hover para fazer alterações quando o mouse apenas passar em cima do termo*/
+        }
+        a:active{
+            color:pink;
+            /*Aqui ultilizei a pseudoclasse (active) que faz alterações no termo que podem ser vista quando o termo for de fato, clicado*/
+        }
+        .especial::before{
+            content: '♡';
+        }
+        /*Adicionará o conteúdo antes do que você escolheu, ou seja, antes do termo colocado antes do ponto e virgula*/
+        a::after{
+            content: '♡';
+            text-decoration: none;
+            font-weight: normal;
+            color: coral;
+        }
+        /*Aqui ultilizei o pseudo elemento que é aquele que faz alterações no conteúdo, nesse caso usei o (after) que adicionara coisas depois do termo que você escolher(o parametro que vem antes do ponto e virgula), ultilizei também o site (https://erikasarti.com/) para adicionar o conteudo antes e depois */
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositorio Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site Cursoemvideo</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shorthand box level</title>
+    <style>
+        h1{/*box-level*/
+            background-color: bisque;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            
+            border: 10px solid pink;
+            /*aqui ultilizei um shorthand para o border, que deve ser declarado na ordem:
+            *espessura (px)
+            *tipo de borda(solid no exemplo)
+            *cor(pink no exemplo)
+            separados por espaço, sem vírgula.
+            */
+            padding: 10px 10px 10px 10px;
+            /*aqui ultilizei o shorthand para o padding
+            que deve ser declarado na ordem:
+            >top
+            >left
+            >bottom
+            >rigth
+            separados, sem virgula.
+            se todas as dimensões forem iguais, pode colocar apenas uma vez e será aplicado a dimensão para todos os lados.
+            se forem 2 diferentes apenas, digite o primeiro, que se aplicará as direções (cima e baixo) e logo apos a segunda(que será aplicada pras direções, direita e esquerda)
+            */
+            margin: 20px auto 40px auto;
+            /*Aqui o Shorthand para margem, basta declara em sentido horário assim como o padding:
+            >top
+            >left
+            >bottom
+            >rigth
+            separados, sem virgula.
+             E caso as dimensões sejam as mesmas, a digite apenas umas vez e esta será aplicada a todas as direções, se forem 2 diferentes apenas, digite o primeiro, que se aplicará as direções (cima e baixo) e logo apos a segunda(que será aplicada pras direções direita e esquerda)
+             colocar auto na direita e na esquerda centraliza a caixa*/        
+            
+             outline: 10px dotted red ;
+             /*aqui ultilizei um shorthand para o outline, que deve ser declarado na ordem:
+            *espessura (px)
+            *tipo de borda(solid no exemplo)
+            *cor(pink no exemplo)
+            separados por espaço, sem vírgula.
+            */
+            }
+            a{ /*inline-level mudei de inline para box-level*/
+                display: block;
+                border: 10px double pink;
+                padding: 10px;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Box level</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, magni, suscipit quia dolorem distinctio vitae eaque impedit, culpa dolorum voluptatum ea. <a href="#">link</a> Aperiam, provident quo fugit autem consequuntur eveniet tempora nisi.</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+body{
+    background-image: linear-gradient(to right, #EEBB98,#ECDDCB);
+}
+main{
+    background-color: white;
+    width: 600px;
+    /*width edita largura*/
+    padding: 10px;
+    /*padding é como um acochoamento que vai criar um pequeno espaço entre a linha e a bosda*/
+    margin: auto;
+    /*margin: auto; vai centralizar o texto independente do tamanho da tela*/
+    border-radius: 20px;
+    /*border-radius: vai arredondar as bordas do main proporcionalmente ao valor que você colocar, no caso coloquei 20px*/
+    box-shadow: 5px 5px 15px #533a27ad;
+    /*box-shadow vai criar uma sombra e tem 4 parâmetros, 
+    o primeiro parâmetro é o quanto a sobra vai andar para o lado
+    o segundo é quanto ela vai andar para baixo
+    o terceiro é quanto a sombra vai espalhar
+    e o quarto é a transparência*/
+}
+h1{
+    color: #E47B61;
+    text-align: center;
+    /*Text-align> vai centralizar o texto que for inserido*/
+    text-shadow: 1px 1px 2px #5e3126be ;
+}
+h2{
+    color: #A91C39;
+}
+p{
+    text-align: justify;
+}

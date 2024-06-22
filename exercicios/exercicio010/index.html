@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>você pode acessar o meu <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repósitorio publico no GitHub</a></p>
+    
+    <p>você também pode acessar o<a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external"> meu canal gratuito no youtube</a></p>
+    <!--Aqui eu ultilizei a tag (a) para usar links externos, que vão levar para outras páginas-->
+    <!--Ao usar essa tag apenas, o usuário clicará no link e a nevegação do link irá sobrepor minha página, fazendo o usuário abandonar o meu site, para que isso não aconteça usa-se  o (target="_blank") e o (rel="external), que abrirão uma nova guia para o link clicado pelo usuário, pode-se usar tambem o (target="suf")"-->
+    <h2>usando links internos</h2>
+    <p>esta é a primeira pagina do meu site se você quiser pode acessar tambem a minha <a href="pag002.html" target="_self" rel="next" hreflang="pt-br">Segunda página</a>
+        <!--Aqui usei a tag <a> para mostrar um link na minha página principal que mostrará a minha página 2, criada por mim mesmo usando um novo arquivo, para demonstrar a ultilização de um link interno. ambos precisam estar dentro da mesma página-->
+            <!--Aqui ultilizei tambem o parâmetro (HREFLANG) que permite indicar em que idioma está o link para o qual o usuário será redirecionado-->
+    </p>
+    <p>já mostrei a segunda página e esta é a minha <a href="página 03/pag003.html" target="_self" rel="next">terceira página</a></p>
+    <!--Aqui eu ultilizei um link interno que além de ser documento diferente, está em outra pasta, logo, é necessário que ao pressionar clrt+espaço você selecione a pasta e só então selecione o a página criada-->
+    
+    <h1>LINKS PARA DOWNLOAD</h1>
+    <ul>
+        <li><a href="/livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte" type="application/pdf">baixar o livro em pdf</a></li>
+        <li><a href="/livro/cursoemvideo-algoritmos-1.zip" download="cursoemvideo-algoritmos-1" type="application/zip">Meu arquivo zipado</a></li>
+        <!--Aqui adicionei links para downloads usando a mesma tag <a> nesse caso o HREF é adiconado da mesma forma dos demais links, porem é necessário adicionar os parâmetros: Download (que vai receber o nome do arquivo) e type (que vai receber o mediatype do arquivo), que pode ser verificafo no site (iana.org) nos casos em questão, o pdf vai ter type application/pdf e o arquivo zip application/zip-->
+    </ul>
+</body>
+</html>

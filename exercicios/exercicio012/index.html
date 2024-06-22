@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão de videos pdf 11</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este videos está hospedado no meu própio servidor</p>
+     <video src="midia/Video1 modificado.mp4" width="560" controls></video>
+    <video src="midia/Video1.webm" width="200" controls></video>
+    <!--Aqui coloquei, de forma mais simples(que inclui um video por vez), um vídeo no meu site usando a tag <video> que vai solicitar um src que pode ser encontrado usando ctrl+espaço, inclui-se o parâmentro (controls) e o (width) que permite que você altere, visualmente, o tamanho do vídeo no seu site.-->
+        <!--A dica pricinpal é sempre incluir o vídeo em todos os formatos aceitos para não haver o risco de ele não rodar em algum navegador como mostrado no exemplo abaixo-->
+        <!--Serve para todos os tipos de midia essa dica-->
+        <video controls width="560" poster="imagens/Como-fazer-seu-video-de-capa-do-Facebook.png">
+            <source src="midia/video1.mp4" type="video/mp4">
+            <source src="midia/Video1.webm" type="video/mp4">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p> <!--Será mostrada essa mensagem caso, o navegador não seja compatível com nenhum dos formatos-->
+            <!--Tambem usei a tag (poster) que serve para incluir uma capa pro seu vídeo-->
+            <!--source tipo src-->
+        </video>
+        <!--esta é a forma de incluir todos os formatos de video, de forma em que, dependendo do navegador que meu site for acessado, ele vai, de cima para baixo, executar o vídeo no formato mais adequado, o type é indipensável, não esquecer.-->
+        <!--A ordem tem total influência, de cima para baixo
+        tentar colocar os arquivos em crescente com relaçao a tamanho, (mb, kb...)-->
+        <!--uma observaçao importante é que esse formato de inserção de vídeo vai gerar um maior custo financeiro para o meu cliente, pela quantidade de mega necessários pra rodar esses vídeos dependendo da quantidade de usuários-->
+        <h1>Incluindo vídeos hospedados em outros sites</h1>
+        <h2>Vídeo do youtube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Xqqf1xA4Uqs?si=R7nO9sGoHjnT_2lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!--Aqui incorporei um vídeo hospedado no site do youtube, na página, após escolher o vídeo, clicarei em compartilhar e em seguida em incorporar, o que criara um código pronto em HTML, e em seguida apenas copio e colo aqui. esse formato de inserção consome os dados do site de origem do vídeo, e não os meus, portanto é mais indicado-->
+        <!--vimeo(pago) vantagens:qualidade desvantagem algoritmo:inferior ao do youtube e youtube(gratuito)desvantagens qualidade:inferior vantagens algoritmo:superior porém meus cídeos ficam bertos pra qualquer um ver e usar. vimeo não, ele dá a opção. ferramentas indicadas para hospedagem -->
+        <h2>Incluindo vídeos do vimeo</h2>
+        <iframe src="https://player.vimeo.com/video/330207644?h=6a9e658aaf&loop=1&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/330207644">Animation reel_2018</a> from <a href="https://vimeo.com/user12750555">Andrei355</a> on <a href="https://vimeo.com">Vimeo</a></p>
+<!--forma de inserção igual ao do youtube-->
+    </body>
+</html>

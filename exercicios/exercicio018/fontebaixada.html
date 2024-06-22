@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas baixadas</title>
+    <style>
+        @font-face {
+            font-family: amor;
+            src: url(fontes/Badinerie-LoveDemo.otf) format('opentype');
+        }
+        @font-face {
+            font-family: 'love' ;/*pode ser o nome que você quiser*/
+            src: url(fontes/love\ larry\ ttf.ttf) format('truetype');
+            /*Aqui ultilizei o @font-face que é usado para adicionar fontes baixadas
+            no src, eu coloco o nome do arquivo(ctrl+espaço) e adiciono o format
+            tipos de format:
+            - opentype(otf)
+            - truetype(ttf)  
+            - embedded-opentype
+            - truetype-aat(Apple Advanced Typography)
+            - svg
+            atenção com espaços, virgulas... fazem muita diferença.           
+            dentro primeiro src, pode se incluir varios scr's, visando ter todos os formatos da mesma fonte, para que o desempenho do site seja excelente em todos os navegadores, assim como com midias.
+            É NECESSÁRIO UM @FONT-FACE PARA CADA FAMILIA DE FONTE. 
+            */
+
+        }
+        body{
+            font-family:'amor','Courier New', Courier, monospace;
+        }
+        h1{
+            font-family:'love', Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        /*para aplicação, coloco o nome que escolhi como fonte family no @font-face*/
+    </style>
+</head>
+<body>
+    <h1>titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ad. Hic accusantium voluptas explicabo omnis, repellat soluta reprehenderit maiores a expedita minus, eum fuga odio ut saepe, debitis excepturi provident.</p>
+</body>
+</html>

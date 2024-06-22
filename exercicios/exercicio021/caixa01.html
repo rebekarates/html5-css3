@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso das caixas/Grouping Tags</title>
+    <style>
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image:linear-gradient(to right, white, grey);
+        margin: 0px;
+       }
+       header{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+       }
+       nav{
+        background-color: rgb(102, 102, 102);
+        padding: 3px;
+       }
+       nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+       }
+       nav > a:hover{
+        text-decoration: underline;
+       }
+       main{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+       }
+       article{
+        background-color: lightgrey;
+        padding: 5px;
+       }
+       article > aside{
+        background-color: rgb(165, 165, 165);
+       }
+       footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+
+    }
+
+    
+    </style>
+</head>
+<body>
+   <header> <!--Se trata do cabeçalho(essência do site)-->
+    <h1> Meu site</h1>
+    <nav><!--usado para fazer um menu-->
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+   </header>
+   <main> <!--Se trata do conteúdo principal do site-->
+    <section id="assuntos">
+
+    </section>
+    <section id="noticias">
+        <article>
+            <h2>Noticia sobre o Brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum provident ea delectus repellendus voluptatem suscipit in soluta alias facere error nostrum aspernatur placeat necessitatibus, doloremque nisi ratione rem commodi neque.</p>
+            <aside>
+                <p>Artigo escrito por José dos Santos</p>
+            </aside>
+        </article>
+        <article>
+
+        </article>
+    </section>
+   </main>
+   <footer> <!--se trata do rodapé do site(informações extras)-->
+    <p>desenvolvido por cursoemvideo</p>
+   </footer> 
+   <!--Aqui é apenas uma sugestão de layout tudo vai depender das necessidades do seu site-->
+</body>
+</html>
