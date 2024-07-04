@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ainda sobre fundos</title>
+    <title>fundo fixo de tela</title>
     <style>
         /*lembrar de configurar o BODY para height:100vh*/
         body{
@@ -13,14 +13,29 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+
+            /*Shorthand-Background
+            ordem:
+            1 color
+            2 image
+            3 position
+            4 repeat
+            5 size(é a regra mas não funciona na prática, declarar separado)
+            6 attachment
+            exemplo:
+            
+             background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed;*/
+        
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
+           
     
         }
     </style>
@@ -28,6 +43,9 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos dolores quaerat suscipit odio maiores perferendis veniam officiis iusto deserunt. Iusto error nam quae iure voluptatem voluptatibus sed voluptate reiciendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi illo exercitationem explicabo sapiente reprehenderit quaerat consequatur molestiae. Error, asperiores sequi aperiam harum autem debitis rem sunt obcaecati dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corporis quasi facere ad delectus repellendus vitae accusamus quisquam officia, ratione reprehenderit. Blanditiis sunt officiis reiciendis iusto, laborum a beatae facere.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos dolores quaerat suscipit odio maiores perferendis veniam officiis iusto deserunt. Iusto error nam quae iure voluptatem voluptatibus sed voluptate reiciendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi illo exercitationem explicabo sapiente reprehenderit quaerat consequatur molestiae. Error, asperiores sequi aperiam harum autem debitis rem sunt obcaecati dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corporis quasi facere ad delectus repellendus vitae accusamus quisquam officia, ratione reprehenderit. Blanditiis sunt officiis reiciendis iusto, laborum a beatae facere.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos dolores quaerat suscipit odio maiores perferendis veniam officiis iusto deserunt. Iusto error nam quae iure voluptatem voluptatibus sed voluptate reiciendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi illo exercitationem explicabo sapiente reprehenderit quaerat consequatur molestiae. Error, asperiores sequi aperiam harum autem debitis rem sunt obcaecati dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corporis quasi facere ad delectus repellendus vitae accusamus quisquam officia, ratione reprehenderit. Blanditiis sunt officiis reiciendis iusto, laborum a beatae facere.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos dolores quaerat suscipit odio maiores perferendis veniam officiis iusto deserunt. Iusto error nam quae iure voluptatem voluptatibus sed voluptate reiciendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi illo exercitationem explicabo sapiente reprehenderit quaerat consequatur molestiae. Error, asperiores sequi aperiam harum autem debitis rem sunt obcaecati dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corporis quasi facere ad delectus repellendus vitae accusamus quisquam officia, ratione reprehenderit. Blanditiis sunt officiis reiciendis iusto, laborum a beatae facere.</p>
     </main>
 </body>
