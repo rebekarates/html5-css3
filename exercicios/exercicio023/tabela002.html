@@ -16,10 +16,23 @@
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+           font-size: 1.5em;
+           font-weight: bold;
+           padding: 10px;
+           background-color: lightgray;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
         }
+        tbody > tr:nth-child(2n){
+            background-color: aquamarine;
+        }
+        td.num{
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
@@ -35,10 +48,12 @@
 
     -->
 <table>
+    <caption>População da Unidades Federativas</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
+            <!--Fiz um esilo inline pra diminuir a coluna com a população pois estava muito grande-->
         </tr>
     </thead>
     <tbody>
